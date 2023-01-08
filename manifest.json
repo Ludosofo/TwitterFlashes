@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Flashes",
+  "description": "Flashes molestos cuando estés más de 2 minutos en Twitter",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+   {
+     "matches": ["https://twitter.com/*"],
+     "js": ["background.js"]
+   }
+ ]
+}
